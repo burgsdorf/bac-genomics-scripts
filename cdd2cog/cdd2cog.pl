@@ -256,7 +256,7 @@ parse_cdd_cog(); # subroutine
 
 
 ### Create results directory for output files
-my $Out_Dir = './results/';
+my $Out_Dir = "./$Rps_Report-results/";                                   ## The more specific name of the report directory (IB).
 if (-e $Out_Dir) {
     print "###Directory '$Out_Dir' already exists! Replace the directory and all its contents [y|n]? ";
     my $user_ask = <STDIN>;
